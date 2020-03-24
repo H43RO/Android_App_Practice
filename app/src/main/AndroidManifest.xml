@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.haerokim.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".TabPager2Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TabPagerActivity">
+
+        </activity>
+        <activity android:name=".PhoneBookWithRecyclerViewActivity"></activity>
+        <activity android:name=".RecyclerViewActivity" />
+        <activity android:name=".ListViewActivity" />
+        <activity android:name=".PhoneBookDetailActivity" />
+        <activity android:name=".PhoneBookActivity" />
+        <activity android:name=".AddViewActivity" />
+        <activity android:name=".LibraryActivity" />
+        <activity android:name=".ThreadActivity" />
+        <activity android:name=".ContextActivity" />
+        <activity android:name=".ResourceActivity" />
+        <activity android:name=".NullSafety" />
+        <activity android:name=".FragmentActivity" />
+        <activity android:name=".Browser" />
+        <activity android:name=".Intent2" />
+        <activity android:name=".Intent1" />
+        <activity android:name=".Calculator" />
+        <activity android:name=".Listener" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

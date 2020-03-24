@@ -1,0 +1,13 @@
+
+
+Context
+  -> ActivityManagerService에 접근하도록 해주는 역할
+  : AcitivityManegerService - (개발할 때 편하기 위해 미리 구현 해놓은 기능)
+
+안드로이드는 이미 굉장히 많은 부분들이 만들어져있음
+(뒤로가기 버튼의 자동 인텐트 등과 같은 기능들) -> 이런것들을 사용하기 위해서는 Context가 필요한 경우가 많다
+
+종류
+- Activity의 context (주변정보) -> Activity의 주변 정보
+- Application의 context (주변정보) -> Application의 주변 정보
+- Application context ( 더 큰 단위 ) >>>> Activity context

@@ -1,0 +1,27 @@
+
+
+Task
+    - Stack : 아래에서 위로 쌓이는 것
+        - Task가 쌓인다 ( Activity와 유사 )
+
+켜지는 방법을 자체 속성으로 가지고 있는 경우
+-> LaunchMode
+
+켜지는 방법을 지시하는 경우
+-> IntentFlag
+
+Activity는 스택으로 관리하는게 사용자 입장에서 가장 자연스러움
+
+LaunchMode      다중허용?
+- Standard        O
+- singleTop      조건부 -> 열려고 하는 액티비티가 현재 액티비티라면 onNewIntent를 호출한다
+======================
+- singleTask      X
+- singleInstance  X
+
+
+IntentFlag
+- FLAG_ACTIVITY_NEW_TASK
+- FLAG_ACTIVITY_SINGLE_TOP
+- FLAG_ACTIVITY_CLEAR_TOP
+등등
