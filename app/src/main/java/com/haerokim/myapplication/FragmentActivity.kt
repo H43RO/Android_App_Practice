@@ -17,7 +17,7 @@ class FragmentActivity : AppCompatActivity(), FragmentOne.OnDataPassListener {
         setContentView(R.layout.activity_fragment)
         Log.d("life_cycle","onCreate")
         val fragmentOne : FragmentOne = FragmentOne() //공통 지역변수로 선언해줘야 띄우고 내리고를 동작시킬 수 있음
-
+        
         //Fragment에 data를 넣어주는 방법
         val bundle:Bundle = Bundle()
         bundle.putString("hello", "hello")

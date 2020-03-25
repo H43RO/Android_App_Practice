@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 
 class Fragment1(): Fragment(){
 
+
     override fun onCreateView(
         inflater: LayoutInflater, //뷰를 그려주는 Inflater
         container: ViewGroup?, //Fragment가 들어갈 부모 뷰
