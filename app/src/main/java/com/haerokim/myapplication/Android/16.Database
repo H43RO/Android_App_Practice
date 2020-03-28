@@ -7,8 +7,8 @@
 - RDB (Relational Database)
     - 관계형 데이터 베이스
     - 엑셀처럼 생겼다
-    -ex) 이름     학번      학교      성별
-         김현준    2018    순천향     남자
+    -ex) 이름     학번      학교      성별     * 만약 전화번호 라는 필드가 생기면 Migration 한다고 한다 (이 때 Sync를 맞추기 위해 데이터 지워야함)
+         김현준    2018    순천향     남자      //Realm의 Configuration을 만들 때 Migration시 data delete 메소드를 호출 함
 
 - Key-Value
     -Key와 Value를 쌍으로 저장하는 방식
