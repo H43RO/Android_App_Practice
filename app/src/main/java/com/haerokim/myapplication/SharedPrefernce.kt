@@ -32,7 +32,6 @@ class SharedPrefernce : AppCompatActivity() {
 
         //내용이 같아도 아이디가 다르면 다른 Preference
 
-
         save_button.setOnClickListener {
             val sharedPrefernce = getSharedPreferences("sp1", Context.MODE_PRIVATE)
             val editor: SharedPreferences.Editor = sharedPrefernce.edit()
