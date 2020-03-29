@@ -1,0 +1,61 @@
+
+
+네트워크
+-> 통신
+         서버가 데이터 상호작용 , 동기화 도와줌
+DataBase <------> Server <------> Client(App, Web...)
+  글 작성                            클라이언트 A
+ 댓글 작성                            클라이언트 B
+
+
+서버를 사용하는 이유는 데이터 베이스를 이용하기 위해서이다
+
+Local DataBase의 한계
+- 동기화가 어렵다
+- 상호작용이 불가능하다
+
+
+Server와 통신하는 방법
+ - 해당 URL로 요청한다
+ - URL 요청시 클라이언트가 인증정보를 같이 보내기도 함 (로그인 상태 등)
+ - JSON 형식을 사용해서 Data를 보낸다
+ - JSON (JavaScript Object Notation -> JavaScript에서 객체를 만들 때 사용하는 표현식)
+
+
+JSON 형식
+ - [] -> List
+ - {} -> 객체
+
+[
+    {
+        "id": 1
+        "name": "홍길동"
+    },
+
+    {
+        "id": 2
+        "name": "루루"
+    }
+]
+
+Json Parsing
+-> Json을 Kotlin, Java가 이해할 수 있게 변형하는 과정
+
+Serializable (직렬화)
+-> 자바 시스템 내부에서 사용되는 Object를 외부에서 사용할 수 있도록 Byte 형태로 바꾸는 것
+
+class Person(
+    var id : Int? = null
+    var name : String? = null
+) {
+
+}
+
+Request Type                 Status Code
+ - GET      -> 정보 요청        ->200 OK
+ - POST     -> 정보 추가 요청    ->201 Created
+ - DELETE   -> 정보 삭제 요청
+ - PUT      -> 정보 수정 요청
+
+Status Code
+ - 200번대 -> 처리가 잘 됨
